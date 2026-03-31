@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徐闻县正茂蔬菜种植有限公司</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
+        }
+        body {
+            background-color: #f2f7f3;
+            color: #333;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999;
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 20px;
+            background-color: #286647;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .lang-btn.active {
+            background-color: #4CAF50;
+            font-weight: bold;
+        }
+        header {
+            background-color: #286647;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 35px;
+            margin-top: 20px;
+        }
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .company-section {
+            background: #fff;
+            border-radius: 10px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .company-section h2 {
+            color: #286647;
+            font-size: 24px;
+            border-left: 5px solid #286647;
+            padding-left: 18px;
+            margin-bottom: 25px;
+        }
+        .product-wrap {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 22px;
+            margin-top: 10px;
+        }
+        .product-card {
+            border: 1px solid #e6f0e9;
+            border-radius: 8px;
+            padding: 22px;
+            background-color: #f9fcf9;
+        }
+        .base-scale, .honor-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .base-item {
+            background: #e6f0e9;
+            padding: 8px 18px;
+            border-radius: 25px;
+        }
+        .honor-item {
+            border: 1px solid #286647;
+            padding: 9px 20px;
+            border-radius: 6px;
+        }
+        .contact-box {
+            background: #e6f0e9;
+            padding: 28px;
+            border-radius: 8px;
+        }
+        .en-content { display: none; }
+    </style>
+</head>
+<body>
+
+<div class="lang-switch">
+    <button class="lang-btn zh active" onclick="switchLang('zh')">中文</button>
+    <button class="lang-btn en" onclick="switchLang('en')">English</button>
+</div>
+
+<!-- 中文头部 -->
+<header class="zh-content">
+    <div class="container">
+        <h1>徐闻县正茂蔬菜种植有限公司</h1>
+        <p>集科研、生产、加工、储运、购销为一体 | 广东省农业重点龙头企业 | 供港澳出口原料备案种植基地</p>
+    </div>
+</header>
+
+<!-- 英文头部 -->
+<header class="en-content">
+    <div class="container">
+        <h1>Xuwen Zhengmao Vegetable Planting Co., Ltd.</h1>
+        <p>Integrating R&D, Production, Processing, Storage, Distribution | Key Leading Agricultural Enterprise of Guangdong Province</p>
+    </div>
+</header>
+
+<main class="container">
+    <!-- 中文 公司简介 -->
+    <section class="company-section zh-content">
+        <h2>公司简介</h2>
+        <p>徐闻县正茂蔬菜种植有限公司成立于2007年，斩获《广东省农业重点龙头企业》等十几项荣誉称号，是一家专注各类果菜种植、销售及进出口业务的综合性农业企业，同时为供港澳出口原料备案种植基地。</p>
+        <p>公司形成科研、生产、加工、储运、购销一体化的规范化、产业化经营模式，拥有国家工商行政管理局、商标局签发的“新科正茂园”和“正茂园”两大注册商标；旗下农产品被湛江市检验检疫局认定为“无公害食品”，6个产品获国家农业局绿色食品认证中心“绿色食品”认证，同时拥有有机草莓专利证书等10项高新科技专利。</p>
+    </section>
+
+    <!-- 英文 公司简介 -->
+    <section class="company-section en-content">
+        <h2>Company Profile</h2>
+        <p>Founded in 2007, Xuwen Zhengmao Vegetable Planting Co., Ltd. has won more than ten honorary titles including "Key Leading Agricultural Enterprise of Guangdong Province". It is a comprehensive agricultural enterprise focusing on the planting, sales, import and export of various fruits and vegetables, and also a recorded planting base for export raw materials to Hong Kong and Macau.</p>
+        <p>The company has formed a standardized and industrialized operation model integrating R&D, production, processing, storage and transportation, distribution and sales. It owns two registered trademarks "Xinke Zhengmaoyuan" and "Zhengmaoyuan". Its agricultural products are recognized as "Pollution-free Food" and 6 products have obtained "Green Food" certification.</p>
+    </section>
+
+    <!-- 中文 企业宗旨 -->
+    <section class="company-section zh-content">
+        <h2>企业宗旨</h2>
+        <p>遵循绿色以及低碳环保，循环可持续发展的理念，提供绿色食品，提高生活品质，传播健康理念。</p>
+    </section>
+
+    <!-- 英文 企业宗旨 -->
+    <section class="company-section en-content">
+        <h2>Corporate Purpose</h2>
+        <p>Abide by the concept of green, low-carbon environmental protection and circular sustainable development, provide green food, improve the quality of life, and spread the concept of health.</p>
+    </section>
+
+    <!-- 中文 明星产品 -->
+    <section class="company-section zh-content">
+        <h2>明星产品</h2>
+        <div class="product-wrap">
+            <div class="product-card">
+                <h3>无核荔枝</h3>
+                <p>热带与亚热带珍稀果树新品种，常绿乔木，产量极其稀少，果实歪心形，平均单果重30克，果皮鲜红，无核性状稳定，品质优异。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 英文 明星产品 -->
+    <section class="company-section en-content">
+        <h2>Star Product</h2>
+        <div class="product-wrap">
+            <div class="product-card">
+                <h3>Seedless Litchi</h3>
+                <p>A rare new variety of fruit tree in tropical and subtropical regions, an evergreen arbor with extremely scarce yield. The fruit is obcordate, with an average single fruit weight of 30 grams, bright red peel, stable seedless character and excellent quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 中文 特色产品 -->
+    <section class="company-section zh-content">
+        <h2>特色产品</h2>
+        <div class="product-wrap">
+            <div class="product-card"><h3>青椒 & 线椒</h3></div>
+            <div class="product-card"><h3>南瓜</h3></div>
+            <div class="product-card"><h3>火龙果</h3></div>
+            <div class="product-card"><h3>白糖罂荔枝</h3></div>
+            <div class="product-card"><h3>凤梨</h3></div>
+            <div class="product-card"><h3>芒果</h3></div>
+        </div>
+    </section>
+
+    <!-- 英文 特色产品 -->
+    <section class="company-section en-content">
+        <h2>Featured Products</h2>
+        <div class="product-wrap">
+            <div class="product-card"><h3>Green Pepper & Line Pepper</h3></div>
+            <div class="product-card"><h3>Pumpkin</h3></div>
+            <div class="product-card"><h3>Pitaya</h3></div>
+            <div class="product-card"><h3>Baitangying Litchi</h3></div>
+            <div class="product-card"><h3>Pineapple</h3></div>
+            <div class="product-card"><h3>Mango</h3></div>
+        </div>
+    </section>
+
+    <!-- 中文 基地规模 -->
+    <section class="company-section zh-content">
+        <h2>种植基地规模</h2>
+        <div class="base-scale">
+            <div class="base-item">种植大棚 100亩</div>
+            <div class="base-item">应季蔬菜 500亩</div>
+            <div class="base-item">无核荔枝 650亩</div>
+            <div class="base-item">白糖罂荔枝 60亩</div>
+            <div class="base-item">火龙果 210亩</div>
+            <div class="base-item">芒果 100亩</div>
+        </div>
+    </section>
+
+    <!-- 英文 基地规模 -->
+    <section class="company-section en-content">
+        <h2>Planting Base Scale</h2>
+        <div class="base-scale">
+            <div class="base-item">Planting Greenhouse: 100 mu</div>
+            <div class="base-item">Seasonal Vegetables: 500 mu</div>
+            <div class="base-item">Seedless Litchi: 650 mu</div>
+            <div class="base-item">Baitangying Litchi: 60 mu</div>
+            <div class="base-item">Pitaya: 210 mu</div>
+            <div class="base-item">Mango: 100 mu</div>
+        </div>
+    </section>
+
+    <!-- 中文 荣誉资质 -->
+    <section class="company-section zh-content">
+        <h2>企业荣誉资质</h2>
+        <div class="honor-wrap">
+            <div class="honor-item">广东省农业重点龙头企业</div>
+            <div class="honor-item">供港澳出口原料备案种植基地</div>
+            <div class="honor-item">无公害食品认证</div>
+            <div class="honor-item">6项绿色食品认证</div>
+        </div>
+    </section>
+
+    <!-- 英文 荣誉资质 -->
+    <section class="company-section en-content">
+        <h2>Corporate Honors</h2>
+        <div class="honor-wrap">
+            <div class="honor-item">Key Leading Agricultural Enterprise</div>
+            <div class="honor-item">Export Base to HK & Macau</div>
+            <div class="honor-item">Pollution-free Food</div>
+            <div class="honor-item">6 Green Food Certifications</div>
+        </div>
+    </section>
+
+    <!-- 中文 联系方式 -->
+    <section class="company-section zh-content">
+        <h2>联系方式</h2>
+        <div class="contact-box">
+            <p><strong>电话：</strong>19875991109</p>
+            <p><strong>邮箱：</strong>2522164904@qq.com</p>
+            <p><strong>地址：</strong>广东省湛江市徐闻县</p>
+        </div>
+    </section>
+
+    <!-- 英文 联系方式 -->
+    <section class="company-section en-content">
+        <h2>Contact Information</h2>
+        <div class="contact-box">
+            <p><strong>Phone：</strong>19875991109</p>
+            <p><strong>Email：</strong>2522164904@qq.com</p>
+            <p><strong>Address：</strong>Xuwen County, Zhanjiang, Guangdong</p>
+        </div>
+    </section>
+</main>
+
+<script>
+function switchLang(lang) {
+    document.querySelectorAll('.zh-content').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.en-content').forEach(el => el.style.display = 'none');
+    if (lang === 'zh') {
+        document.querySelectorAll('.zh-content').forEach(el => el.style.display = 'block');
+    } else {
+        document.querySelectorAll('.en-content').forEach(el => el.style.display = 'block');
+    }
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.lang-btn.${lang}`).classList.add('active');
+}
+</script>
+</body>
+</html>
